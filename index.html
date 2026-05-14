@@ -5,140 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>カエデの天命律鑑定</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .slideshow img { width:100%; display:none; }
-        .slideshow img.active { display:block; }
-
-        .fixed-btn {
-            position: fixed;
-            bottom: 16px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 88%;
-            max-width: 400px;
-            z-index: 1000;
-            cursor: pointer;
-            animation: btn-pulse 2s ease-in-out infinite;
-        }
-        .fixed-btn img { width:100%; display:block; }
-
-        @keyframes btn-pulse {
-            0%, 100% { transform: translateX(-50%) scale(1); }
-            50%       { transform: translateX(-50%) scale(1.04); }
-        }
-
-        .cta-spacer { height: 90px; }
-    </style>
 </head>
 <body>
-
-    <!-- 固定ボタン -->
     <div class="fixed-btn">
         <img src="images/btn.png" alt="無料鑑定お申し込みはこちら">
     </div>
 
     <div class="lp-container">
 
-        <!-- TOP -->
-        <section class="section-image">
-            <img src="images/TOP.png" alt="TOP">
-        </section>
+        <section class="section-image"><img src="images/TOP.png" alt=""></section>
+        <section class="section-image"><img src="images/CTA.png" alt=""></section>
+        <section class="section-image"><img src="images/2.png" alt=""></section>
+        <section class="section-image"><img src="images/3.png" alt=""></section>
+        <section class="section-image"><img src="images/4.png" alt=""></section>
+        <section class="section-image"><img src="images/5.png" alt=""></section>
+        <section class="section-image"><img src="images/6.png" alt=""></section>
+        <section class="section-image"><img src="images/CTA.png" alt=""></section>
 
-        <!-- CTA① -->
-        <section class="section-image">
-            <img src="images/CTA.png" alt="CTA">
-        </section>
-
-        <!-- 2 -->
-        <section class="section-image">
-            <img src="images/2.png" alt="">
-        </section>
-
-        <!-- 3 -->
-        <section class="section-image">
-            <img src="images/3.png" alt="">
-        </section>
-
-        <!-- 4 -->
-        <section class="section-image">
-            <img src="images/4.png" alt="">
-        </section>
-
-        <!-- 5 -->
-        <section class="section-image">
-            <img src="images/5.png" alt="">
-        </section>
-
-        <!-- 6 -->
-        <section class="section-image">
-            <img src="images/6.png" alt="">
-        </section>
-
-        <!-- CTA② -->
-        <section class="section-image">
-            <img src="images/CTA.png" alt="CTA">
-        </section>
-
-        <!-- 8_1 / 8_2 / 8_3 スライドショー -->
         <div class="slideshow" id="ss">
             <img src="images/8_1.png" class="active" alt="">
             <img src="images/8_2.png" alt="">
             <img src="images/8_3.png" alt="">
         </div>
 
-        <!-- 9 -->
-        <section class="section-image">
-            <img src="images/9.png" alt="">
-        </section>
+        <section class="section-image"><img src="images/9.png" alt=""></section>
+        <section class="section-image"><img src="images/CTA.png" alt=""></section>
+        <section class="section-image"><img src="images/10.png" alt=""></section>
+        <section class="section-image"><img src="images/11.png" alt=""></section>
+        <section class="section-image"><img src="images/12.png" alt=""></section>
+        <section class="section-image"><img src="images/13.png" alt=""></section>
+        <section class="section-image"><img src="images/カエデメッセージ.png" alt=""></section>
+        <section class="section-image"><img src="images/CTA.png" alt=""></section>
 
-        <!-- CTA③ -->
-        <section class="section-image">
-            <img src="images/CTA.png" alt="CTA">
-        </section>
+        <section class="lp-bottom">
 
-        <!-- 10 -->
-        <section class="section-image">
-            <img src="images/10.png" alt="">
-        </section>
+            <section class="faq-section">
+                <h2>よくある質問</h2>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 未成年でも入会できますか？</button>
+                    <div class="faq-answer"><div><p>A. 18歳未満（高校生含む）はご参加いただけません。</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 返金はできますか？</button>
+                    <div class="faq-answer"><div><p>A. デジタル提供の性質上、提供後の返金は不可。次回更新前に解約ください。</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 参加の流れを教えてください</button>
+                    <div class="faq-answer"><div><p>A. メール（＋任意でLINE）を登録すると、会員サイトの招待が届きます。プランを選択し決済を確定させると、すぐに伝言板とカレンダーが閲覧可能です。各プランの特典（鑑定／個別コーチング）はスケジュールに沿ってご案内します。</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 料金やプランについて</button>
+                    <div class="faq-answer">
+                        <div>
+                            <h3>料金プラン（毎月手動更新/税込）</h3>
+                            <div class="plan"><h4>縁結の間（えんむすび） 2,980円/月</h4><p>・みんなの伝言板<br>・しあわせカレンダー<br>・お便りコーナー閲覧＆書き込み<br>・限定開運コラム（月2～3本）</p></div>
+                            <div class="plan"><h4>深縁の間（しんえん） 9,800円/月</h4><p>・みんなの伝言板<br>・しあわせカレンダー<br>・お便りコーナー閲覧＆書き込み<br>・限定開運コラム（月2～3本）<br>・月1回のグループ波動調律<br>・調律後に心願成就の御札を配布（祈祷済みデジタル御札）</p></div>
+                            <div class="plan"><h4>天啓の間（てんけい） 29,800円/月</h4><p>・みんなの伝言板<br>・しあわせカレンダー<br>・お便りコーナー閲覧＆書き込み<br>・限定開運コラム（月2～3本）<br>・月1回のグループ波動調律<br>・調律後に心願成就の御札を配布（祈祷済みデジタル御札）<br>・月1回の個別鑑定<br>・オリジナル浄化塩のお届け</p></div>
+                            <h3>決済方法</h3>
+                            <p>銀行振込・クレジットカード（その他、一部電子マネーの使用可）</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 個別鑑定は入っていますか？</button>
+                    <div class="faq-answer"><div><p>A. 29,800円プランに月1回の個別セッションが含まれます（追加は別料金）。</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Q. 当選のコツは教えてもらえますか？</button>
+                    <div class="faq-answer"><div><p>A. 具体的な予想や確約は行いません。受け取る姿勢と習慣を整える場としてご活用ください。</p></div></div>
+                </div>
+            </section>
 
-        <!-- 11 -->
-        <section class="section-image">
-            <img src="images/11.png" alt="">
-        </section>
+            <!-- メアド入力フォーム -->
+            <div class="entry-form-area">
+                <img src="images/背景.png" class="entry-form-bg" alt="">
+                <div class="form-inner-wrap">
+                    <input type="email" placeholder="メールアドレスをご入力ください" class="mail-input">
+                    <p class="agree-text"><input type="checkbox" checked> <a href="#">利用規約</a>に同意して占い師カエデのプライベートサロン～しあわせ荘～からのメールを受信する。※20歳未満の方のご利用はお断りさせて頂きます。</p>
+                    <button type="submit" class="entry-btn">会員登録</button>
+                    <div class="important-box">
+                        <h3>※重要※</h3>
+                        <p>入会申し込み後、直後に登録用メール（<strong>「件名：本登録はコチラから」含む</strong>）が<strong>【2通】</strong>自動配信されます。<br>
+                        当サイトからのお知らせメールが自動的に迷惑メールフォルダに振り分けられる場合がございます。<br>
+                        <strong>【2通】届かない場合、迷惑メールフォルダも併せてご確認ください。</strong><br>
+                        ※迷惑メールフォルダにも届いていない場合は「<strong>03-6807-4259</strong>」までお電話をおかけください。</p>
+                    </div>
+                </div>
+            </div>
 
-        <!-- 12 -->
-        <section class="section-image">
-            <img src="images/12.png" alt="">
-        </section>
+            <!-- 手順 -->
+            <div class="steps-section">
+                <div class="steps">
+                    <div>手順1　メールアドレスを入力</div><span>▼</span>
+                    <div>手順2　会員登録をクリック</div><span>▼</span>
+                    <div>手順3　入力したアドレスに「仮登録完了メールが2通」届いている事を確認</div><span>▼</span>
+                    <div>手順4　仮登録完了メールに記載のURLにアクセスして本登録</div>
+                </div>
+            </div>
 
-        <!-- 13 -->
-        <section class="section-image">
-            <img src="images/13.png" alt="">
-        </section>
+            <!-- メール注意 -->
+            <div class="mail-section">
+                <div class="mail-section-inner">
+                    <p><strong>！ご利用中のメールアドレスにご注意下さい</strong><br>
+                    下記ドメインでは弊社メールマガジンを受信できないケースがありますので、恐れ入りますがフリーメール等、別のメールアドレスにてご登録ください。<br>
+                    また、docomoメールも同様に受信できないケースが報告されていますので、その他メールアドレスにてご登録頂くか、【拒否設定を解除】した上でご登録ください。受信に不具合が確認されているドメイン</p>
+                    <p>【icloud.com、hotmail.com、live.jp、outlook.jp、msn.com、me.com、infoseek.jp】</p>
+                    <p><strong>！docomoの拒否設定を解除する手順</strong><br>
+                    １.【https://spmode.smt.docomo.ne.jp/mail_setting/】からdアカウントIDでログイン<br>
+                    ２.【メール設定内容の確認】を開く<br>
+                    ３.【特定送信元/ウイルスメール拒否設定】【大量送信者からのメール拒否設定】を選択<br>
+                    ４.【拒否しない】にチェック<br>
+                    ５.【設定を確定】させる</p>
+                    <p>メールアドレスを送信後「仮登録メール」が送られてきます。メールアドレスを送信していただいたあとに「仮登録メール」が配信されますが、5分経っても仮登録メールが届かない場合にはお手数でも【問い合わせフォーム】までご連絡ください。</p>
+                    <div class="mail-alert">メールが受け取れない場合は、メール受信設定をお願いいたします。</div>
+                    <p class="mail-note">※kaede-uranai.comのドメインを指定し、許可設定を行ってください。<br>※設定後も受信出来ない場合はお近くのショップにご相談ください。<br>※不明点は03-6807-4259まで遠慮なくお電話ください。</p>
+                    <table class="contact-table">
+                        <tr><td>電話</td><td>03-6807-4259</td></tr>
+                        <tr><td>メール</td><td>info@kaede-uranai.com</td></tr>
+                    </table>
+                </div>
+            </div>
 
-        <footer class="footer">
-            <nav class="footer-nav">
-                <a href="#">利用規約</a> | <a href="#">プライバシーポリシー</a>
-            </nav>
-            <p class="footer-note">入会前にご確認ください。</p>
-            <p class="footer-disclaimer">
-                免責：当選・収入・健康等の成果は保証しません。<br>
-                医療・法律・投資・ギャンブルの具体的助言や予想は行いません。
-            </p>
-        </footer>
+            <footer class="lp-footer">
+                <ul>
+                    <li>利用規約</li><li>特定商取引法に基づく表記</li>
+                    <li>プライバシーポリシー</li><li>よくある質問</li>
+                </ul>
+                <p class="note">
+                    ※当社は、本サービスに起因してお客様に生じたあらゆる損害について一切の責任を負いません。<br>
+                    ※サイト内に掲載している画像は全てイメージ画像となります。<br>
+                    ※当社が提供する本サービスは、占い師より発信される結果に対し、その効果や実現性を保証するものではありません。<br>
+                    また、商品の販売形態の性質上、役務提供後の返金には応じられません。
+                </p>
+                <p class="copy">Copyright (c) 占い師カエデのプライベートサロン～しあわせ荘～ All Rights Reserved</p>
+            </footer>
+
+        </section>
 
     </div>
 
     <script>
     (function(){
-        var slides = document.querySelectorAll('#ss img');
-        var i = 0;
+        var s = document.querySelectorAll('#ss img'), i = 0;
         setInterval(function(){
-            slides[i].classList.remove('active');
-            i = (i+1) % slides.length;
-            slides[i].classList.add('active');
+            s[i].classList.remove('active');
+            i = (i + 1) % s.length;
+            s[i].classList.add('active');
         }, 2000);
     })();
+    document.querySelectorAll('.faq-question').forEach(function(btn){
+        btn.addEventListener('click', function(){
+            var ans = this.nextElementSibling;
+            var isOpen = this.classList.contains('active');
+            this.classList.toggle('active');
+            ans.style.maxHeight = isOpen ? '0' : ans.scrollHeight + 'px';
+        });
+    });
     </script>
 </body>
 </html>
