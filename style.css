@@ -3,13 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
     background-color: #1a1a1a;
     color: #333;
 }
-
 .lp-container {
     max-width: 480px;
     margin: 0 auto;
@@ -20,7 +18,6 @@ body {
     position: relative;
     overflow: hidden;
 }
-
 .section-image {
     width: 100%;
     position: relative;
@@ -28,207 +25,72 @@ body {
     line-height: 0;
     font-size: 0;
 }
-
 .section-image img {
     width: 100%;
     height: auto;
     display: block;
 }
-
-.text-layer {
-    position: absolute;
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
-.middle-center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85%;
-}
-
-.top-center {
-    top: 10%;
+.slideshow img { width:100%; display:none; }
+.slideshow img.active { display:block; }
+.fixed-btn {
+    position: fixed;
+    bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-    width: 85%;
+    width: 88%;
+    max-width: 400px;
+    z-index: 1000;
+    cursor: pointer;
+    animation: btn-pulse 2s ease-in-out infinite;
 }
-
-.bottom-center {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85%;
+.fixed-btn img { width:100%; display:block; }
+@keyframes btn-pulse {
+    0%, 100% { transform: translateX(-50%) scale(1); }
+    50%       { transform: translateX(-50%) scale(1.04); }
 }
-
-.w-90 {
-    width: 90%;
+.lp-bottom {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    padding: 40px 16px;
 }
-
-.h-85 {
-    height: 85%;
-}
-
-.h-90 {
-    height: 90%;
-}
-
-/* 新しいマスクデザイン：はみ出し防止のために上下に広がるグラスモーフィズム */
-.mask-box {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    padding: 25px 15px;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    color: #333;
-    width: 100%;
-}
-
-.mask-dark {
-    background: rgba(10, 15, 30, 0.65);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.mask-dark h2,
-.mask-dark h3 {
-    color: #ffd54f;
-}
-
-.cover-full {
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.cover-large {
-    padding: 40px 15px 100px 15px;
-}
-
-.highlight-mask {
-    background: linear-gradient(to right, #ffefc2, #ffda75);
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #ff9800;
-    color: #333;
-}
-
-.highlight-mask h3 {
-    color: #d84315;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.font-bold {
-    font-weight: bold;
-}
-
-.mt-2 {
-    margin-top: 10px;
-}
-
-.mt-4 {
-    margin-top: 20px;
-}
-
-.large-text {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.danger-text {
-    color: #ff8a80;
-    font-weight: bold;
-}
-
-/* Changed to look better on dark mask */
-
-h2 {
-    font-size: 1.3rem;
-    margin-bottom: 5px;
-    color: #1565c0;
-}
-
-h3 {
-    font-size: 1.1rem;
-    color: #333;
-}
-
-p {
-    font-size: 0.95rem;
-}
-
-.cta-text {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-}
-
-.cta-subtitle {
-    color: #e65100;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-.cta-note {
-    color: #424242;
-    font-size: 0.8rem;
-}
-
-.reason-list {
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-.reason-list li {
-    margin-bottom: 12px;
-    font-weight: bold;
-}
-
-.section-placeholder {
-    width: 100%;
-    padding: 100px 20px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #ccc;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.placeholder-box {
-    border: 2px dashed #999;
-    padding: 40px 10px;
-    background: #fff;
-    border-radius: 8px;
-}
-
-.footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 0.85rem;
-    line-height: 1.6;
-}
-
-.footer-nav a {
-    color: #64b5f6;
-    text-decoration: none;
-}
-
-.footer-note {
-    margin: 10px 0;
-}
-
-.footer-disclaimer {
-    color: #aaa;
-    font-size: 0.75rem;
-}
+.faq-section, .lp-footer { max-width: 860px; margin: 0 auto; }
+.faq-section h2 { text-align: center; font-size: 32px; color: #d4a96a; margin-bottom: 30px; border-bottom: 3px double #b98a45; padding-bottom: 14px; }
+.faq-item { margin-bottom: 14px; border: 2px solid #b98a45; border-radius: 10px; overflow: hidden; background: #333; }
+.faq-question { width: 100%; background: #5a3010; color: #fff; border: none; padding: 18px 48px 18px 20px; font-size: 17px; font-weight: bold; text-align: left; cursor: pointer; position: relative; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; }
+.faq-question::after { content: "＋"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 22px; }
+.faq-question.active::after { content: "－"; }
+.faq-answer { max-height: 0; overflow: hidden; background: #333; transition: max-height 0.35s ease; }
+.faq-answer > div { padding: 18px 20px; }
+.faq-answer p { margin: 0 0 8px; color: #ddd; font-size: 15px; line-height: 1.9; }
+.faq-answer h3 { color: #d4a96a; border-left: 5px solid #b98a45; padding-left: 10px; margin: 16px 0 10px; }
+.plan { background: #3a3a2a; border: 1px solid #b98a45; padding: 14px; margin: 14px 0; border-radius: 8px; }
+.plan h4 { color: #d4a96a; font-size: 17px; margin-bottom: 8px; }
+.entry-form-area { max-width: 480px; margin: 40px auto; border-radius: 12px; overflow: hidden; position: relative; text-align: center; }
+.entry-form-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; z-index: 0; }
+.form-inner-wrap { position: relative; z-index: 1; padding: 180px 24px 24px; }
+.mail-input { width: 100%; padding: 14px 16px; font-size: 15px; border: 2px solid #fff; border-radius: 6px; background: #fff; color: #333; outline: none; margin-bottom: 10px; box-sizing: border-box; }
+.mail-input::placeholder { color: #999; }
+.agree-text { font-size: 13px; color: #e0d0b0; text-align: left; margin-bottom: 16px; line-height: 1.7; }
+.agree-text a { color: #ffd700; text-decoration: underline; }
+.entry-btn { width: 100%; padding: 16px; font-size: 18px; font-weight: bold; background: linear-gradient(135deg, #ff9500, #ff6500); color: #fff; border: none; border-radius: 50px; cursor: pointer; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; box-shadow: 0 4px 12px rgba(255,120,0,0.5); margin-bottom: 20px; }
+.important-box { background: rgba(180,30,30,0.9); color: #fff; border-radius: 8px; padding: 16px; font-size: 14px; line-height: 1.9; text-align: left; }
+.important-box h3 { text-align: center; font-size: 18px; margin-bottom: 10px; color: #fff; }
+.important-box strong { color: #ffe082; }
+.steps-section { max-width: 480px; margin: 30px auto; font-family: sans-serif; }
+.steps { text-align: center; font-weight: bold; color: #ddd; margin: 0; }
+.steps div { background: #5a3010; color: #fff; padding: 14px; border-radius: 8px; margin: 10px 0; }
+.steps span { display: block; color: #b98a45; font-size: 24px; }
+.mail-section { max-width: 480px; margin: 30px auto; background: #fff; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; color: #333; font-family: sans-serif; overflow: hidden; }
+.mail-section-inner { padding: 16px; line-height: 1.8; }
+.mail-section-inner p { margin-bottom: 12px; }
+.mail-alert { background: #c0392b; color: #fff; text-align: center; font-weight: bold; padding: 12px 16px; margin: 16px 0; border-radius: 4px; font-size: 15px; }
+.mail-note { font-size: 13px; color: #555; margin: 12px 0; line-height: 1.7; }
+.contact-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+.contact-table td { border: 1px solid #555; padding: 10px 14px; font-size: 14px; }
+.contact-table td:first-child { background: #333; color: #fff; font-weight: bold; width: 25%; text-align: center; }
+.lp-footer { margin-top: 40px; text-align: center; font-size: 13px; color: #aaa; max-width: 860px; margin-left: auto; margin-right: auto; }
+.lp-footer ul { list-style: none; padding: 0; margin: 20px 0; }
+.lp-footer li { display: inline-block; margin: 0 10px 8px; text-decoration: underline; cursor: pointer; color: #ccc; }
+.note { line-height: 1.8; border-top: 1px solid #555; border-bottom: 1px solid #555; padding: 18px 0; color: #bbb; }
+.copy { margin-top: 20px; font-size: 12px; color: #888; }
