@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background-color: #1a1a1a;
+    color: #333;
+}
+
+.lp-container {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-image {
+    width: 100%;
+    position: relative;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-layer {
+    position: absolute;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.middle-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+}
+
+.top-center {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+}
+
+.bottom-center {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.h-85 {
+    height: 85%;
+}
+
+.h-90 {
+    height: 90%;
+}
+
+/* 新しいマスクデザイン：はみ出し防止のために上下に広がるグラスモーフィズム */
+.mask-box {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #333;
+    width: 100%;
+}
+
+.mask-dark {
+    background: rgba(10, 15, 30, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mask-dark h2,
+.mask-dark h3 {
+    color: #ffd54f;
+}
+
+.cover-full {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cover-large {
+    padding: 40px 15px 100px 15px;
+}
+
+.highlight-mask {
+    background: linear-gradient(to right, #ffefc2, #ffda75);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ff9800;
+    color: #333;
+}
+
+.highlight-mask h3 {
+    color: #d84315;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.large-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.danger-text {
+    color: #ff8a80;
+    font-weight: bold;
+}
+
+/* Changed to look better on dark mask */
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #1565c0;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+p {
+    font-size: 0.95rem;
+}
+
+.cta-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+.cta-subtitle {
+    color: #e65100;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.cta-note {
+    color: #424242;
+    font-size: 0.8rem;
+}
+
+.reason-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.reason-list li {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.section-placeholder {
+    width: 100%;
+    padding: 100px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.placeholder-box {
+    border: 2px dashed #999;
+    padding: 40px 10px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.footer-nav a {
+    color: #64b5f6;
+    text-decoration: none;
+}
+
+.footer-note {
+    margin: 10px 0;
+}
+
+.footer-disclaimer {
+    color: #aaa;
+    font-size: 0.75rem;
+}

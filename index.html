@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カエデの天命律鑑定</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .slideshow img { width:100%; display:none; }
+        .slideshow img.active { display:block; }
+
+        .fixed-btn {
+            position: fixed;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 88%;
+            max-width: 400px;
+            z-index: 1000;
+            cursor: pointer;
+            animation: btn-pulse 2s ease-in-out infinite;
+        }
+        .fixed-btn img { width:100%; display:block; }
+
+        @keyframes btn-pulse {
+            0%, 100% { transform: translateX(-50%) scale(1); }
+            50%       { transform: translateX(-50%) scale(1.04); }
+        }
+
+        .cta-spacer { height: 90px; }
+    </style>
+</head>
+<body>
+
+    <!-- 固定ボタン -->
+    <div class="fixed-btn">
+        <img src="images/btn.png" alt="無料鑑定お申し込みはこちら">
+    </div>
+
+    <div class="lp-container">
+
+        <!-- TOP -->
+        <section class="section-image">
+            <img src="images/TOP.png" alt="TOP">
+        </section>
+
+        <!-- CTA① -->
+        <section class="section-image">
+            <img src="images/CTA.png" alt="CTA">
+        </section>
+
+        <!-- 2 -->
+        <section class="section-image">
+            <img src="images/2.png" alt="">
+        </section>
+
+        <!-- 3 -->
+        <section class="section-image">
+            <img src="images/3.png" alt="">
+        </section>
+
+        <!-- 4 -->
+        <section class="section-image">
+            <img src="images/4.png" alt="">
+        </section>
+
+        <!-- 5 -->
+        <section class="section-image">
+            <img src="images/5.png" alt="">
+        </section>
+
+        <!-- 6 -->
+        <section class="section-image">
+            <img src="images/6.png" alt="">
+        </section>
+
+        <!-- CTA② -->
+        <section class="section-image">
+            <img src="images/CTA.png" alt="CTA">
+        </section>
+
+        <!-- 8_1 / 8_2 / 8_3 スライドショー -->
+        <div class="slideshow" id="ss">
+            <img src="images/8_1.png" class="active" alt="">
+            <img src="images/8_2.png" alt="">
+            <img src="images/8_3.png" alt="">
+        </div>
+
+        <!-- 9 -->
+        <section class="section-image">
+            <img src="images/9.png" alt="">
+        </section>
+
+        <!-- CTA③ -->
+        <section class="section-image">
+            <img src="images/CTA.png" alt="CTA">
+        </section>
+
+        <!-- 10 -->
+        <section class="section-image">
+            <img src="images/10.png" alt="">
+        </section>
+
+        <!-- 11 -->
+        <section class="section-image">
+            <img src="images/11.png" alt="">
+        </section>
+
+        <!-- 12 -->
+        <section class="section-image">
+            <img src="images/12.png" alt="">
+        </section>
+
+        <!-- 13 -->
+        <section class="section-image">
+            <img src="images/13.png" alt="">
+        </section>
+
+        <footer class="footer">
+            <nav class="footer-nav">
+                <a href="#">利用規約</a> | <a href="#">プライバシーポリシー</a>
+            </nav>
+            <p class="footer-note">入会前にご確認ください。</p>
+            <p class="footer-disclaimer">
+                免責：当選・収入・健康等の成果は保証しません。<br>
+                医療・法律・投資・ギャンブルの具体的助言や予想は行いません。
+            </p>
+        </footer>
+
+    </div>
+
+    <script>
+    (function(){
+        var slides = document.querySelectorAll('#ss img');
+        var i = 0;
+        setInterval(function(){
+            slides[i].classList.remove('active');
+            i = (i+1) % slides.length;
+            slides[i].classList.add('active');
+        }, 2000);
+    })();
+    </script>
+</body>
+</html>
